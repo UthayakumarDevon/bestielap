@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Birthday-wish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Font Awesome 4.7 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -17,8 +19,8 @@
     }
 
     body {
-      background: url('WhatsApp Image 2025-11-28 at 4.21.26 PM.jpeg');
-      background-size: 250px auto;
+      background: url('WhatsApp Image 2025-11-28 at 4.21.26 PM.jpeg') no-repeat center center;
+      background-size: cover;
       font-family: 'Playfair Display', serif;
     }
 
@@ -30,15 +32,15 @@
     .main {
       height: 650px;
       border: 3px solid navy;
-      background: url('63649831-happy-birthday-lettering-and-doodle-seamless-pattern-vector-illustration-on-white-background-funny.jpg');
-      background-size: 400px auto;
+      background: url('63649831-happy-birthday-lettering-and-doodle-seamless-pattern-vector-illustration-on-white-background-funny.jpg') no-repeat center center;
+      background-size: cover;
     }
 
     .devo {
       height: 460px;
       border: 3px solid navy;
-      background: url('8jqq_vqxg_230323.jpg');
-      background-size: 400px auto;
+      background: url('8jqq_vqxg_230323.jpg') no-repeat center center;
+      background-size: cover;
       position: relative;
     }
 
@@ -52,17 +54,17 @@
 
     /* Audio button positioning */
     .sticky-btn {
-      position: absolute;        /* start centered */
+      position: absolute;
       left: 75%;
-      top: 600px;                /* adjust vertical position */
+      top: 600px;
       transform: translateX(-50%);
-      transition: all 1s ease; /* smooth transition */
+      transition: all 1s ease;
       z-index: 1000;
     }
 
     .sticky-btn.fixed {
-      position: fixed;           /* stick to viewport */
-      top: 1px;                 /* top-right corner */
+      position: fixed;
+      top: 1px;
       right: 20px;
       left: auto;
       transform: none;
@@ -126,6 +128,56 @@
       25%      { box-shadow: 0 0 40px orange, 0 0 80px green; }
       50%      { box-shadow: 0 0 40px yellow, 0 0 80px violet; }
       75%      { box-shadow: 0 0 40px cyan, 0 0 80px pink; }
+    }
+
+    /* Responsive adjustments for phones */
+    @media (max-width: 768px) {
+      .main, .devo {
+        height: auto;                /* flexible height */
+        padding: 10px;
+      }
+
+      table {
+        width: 100%;
+        display: block;
+      }
+
+      table img {
+        width: 100%;
+        height: auto;                /* keep aspect ratio */
+      }
+
+      th, td {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 6vw;
+        line-height: 1.4;
+      }
+
+      font[size], p {
+        font-size: 4vw !important;
+      }
+
+      .sticky-btn {
+        bottom: 20px;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
+      }
+
+      .btn {
+        font-size: 12vw;
+      }
+
+      .abc {
+        width: 60px;
+        height: 60px;
+        font-size: 12vw;
+      }
     }
   </style>
 </head>
@@ -244,4 +296,5 @@
 
   </script>
 </body>
+
 </html>
