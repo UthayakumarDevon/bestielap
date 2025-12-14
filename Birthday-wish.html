@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday-wish</title>
+  <!-- Font Awesome 4.7 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Playfair Display Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('WhatsApp Image 2025-11-28 at 4.21.26 PM.jpeg');
+      background-size: 250px auto;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .bc {
+      position: sticky;
+      top: 0;
+    }
+
+    .main {
+      height: 650px;
+      border: 3px solid navy;
+      background: url('63649831-happy-birthday-lettering-and-doodle-seamless-pattern-vector-illustration-on-white-background-funny.jpg');
+      background-size: 400px auto;
+    }
+
+    .devo {
+      height: 460px;
+      border: 3px solid navy;
+      background: url('8jqq_vqxg_230323.jpg');
+      background-size: 400px auto;
+      position: relative;
+    }
+
+    .dev {
+      line-height: 70px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Audio button positioning */
+    .sticky-btn {
+      position: absolute;        /* start centered */
+      left: 75%;
+      top: 600px;                /* adjust vertical position */
+      transform: translateX(-50%);
+      transition: all 1s ease; /* smooth transition */
+      z-index: 1000;
+    }
+
+    .sticky-btn.fixed {
+      position: fixed;           /* stick to viewport */
+      top: 1px;                 /* top-right corner */
+      right: 20px;
+      left: auto;
+      transform: none;
+    }
+
+    /* Glowing button styles */
+    .btn {
+      position: absolute;
+      left: 50%;
+      top: 52%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      color: #fff;
+      font-size: 85px;
+      border: none;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      opacity: .3;
+      transition: all linear .2s;
+      cursor: pointer;
+    }
+    .btn:hover { opacity: 1; }
+    .fa-pause-circle-o { display: none; }
+
+    .abc {
+      width: 80px;
+      height: 80px;
+      background: #111;
+      color: #fff;
+      font-size: 85px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      animation: outerGlow 6s ease-in-out infinite;
+    }
+    .abc::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      padding: 14px;
+      background: linear-gradient(to right, red, blue);
+      background-size: 200% 200%;
+      animation: borderShift 6s ease-in-out infinite;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+      z-index: -1;
+    }
+    @keyframes borderShift {
+      0%   { background: linear-gradient(to right, red, blue); }
+      25%  { background: linear-gradient(to right, orange, green); }
+      50%  { background: linear-gradient(to right, yellow, violet); }
+      75%  { background: linear-gradient(to right, cyan, pink); }
+      100% { background: linear-gradient(to right, red, blue); }
+    }
+    @keyframes outerGlow {
+      0%, 100% { box-shadow: 0 0 40px red, 0 0 80px blue; }
+      25%      { box-shadow: 0 0 40px orange, 0 0 80px green; }
+      50%      { box-shadow: 0 0 40px yellow, 0 0 80px violet; }
+      75%      { box-shadow: 0 0 40px cyan, 0 0 80px pink; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bc">
+    <marquee scrollamount="15px" height=80 bgcolor="black"> 
+      <font size="200px" color="navy"><b>BLACK &nbsp CUTIE</b> 🥰💙</font> 
+    </marquee>
+  </div>
+
+  <!-- Audio Button -->
+  <div class="sticky-btn">
+    <audio id="mymusic" src="Devon-song.mp3" loop=""></audio>
+    <div class="abc">
+      <button class="btn">
+        <i class="fa fa-play-circle-o"></i>
+        <i class="fa fa-pause-circle-o"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Birthday Content -->
+  <center>
+    <div class="main">
+      <center>
+        <table bordercolor="deepskyblue" style="width:65%;background-color:green;">
+          <tr>
+            <td><img src="Vidthiyashalini.jpg" height=600 width=300 alt="VS"></td>
+            <th>
+              <center>
+                <font size="70px">💕 Wishing you a birthday as beautiful as your soul and as bright as your smile, </font>
+                <p style="font-size: 100px; color:maroon;">My Dear<br> Bestie <br> 💞</p>
+              </center>
+            </th>
+          </tr>
+        </table>
+      </center>
+    </div><br><br><br>
+    <center>
+      <h1 style="font-size:50px;">
+        On this bright and joyful day,<br>
+        May happiness light your way.<br>
+        Laughter, love, and dreams come true,<br>
+        This birthday shines because of you.<br>
+        And my wish, from heart so deep,<br>
+        Is the best you’ll ever keep.
+      </h1>
+    </center><br><br><br><br><br><br><br>
+    <font size=24>
+      I truly hope this birthday brings you endless happiness, joy and love. 
+      May you feel how special today is, and may it be filled with unforgettable moments. 
+      My wish for you comes straight from the heart. 
+      I wish that my message reaches you as the warmest and most heartfelt wish you’ve ever received.
+    </font>
+    <div class="devo">
+      <div class="dev">
+        <center>
+          <b>
+            <p style="font-size:63px; color:#8e0039;">
+              <font face="magneto">ALL THE BEST </font>
+              <font face="castellar">VIDTHIYASHALINI</font><br>
+              <font face="lucida calligraphy"> for your A/L studies</font> 
+              <font face="blackadder itc">(BIO) & </font>
+              <font face="lucida calligraphy">higher studies to become a...</font> 
+              <font face="blackadder itc">(DOCTOR)</font>
+            </p>
+          </b>
+        </center>
+      </div>
+    </div>
+  </center>
+
+  <!-- Plain JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const playIcon = document.querySelector(".fa-play-circle-o");
+      const pauseIcon = document.querySelector(".fa-pause-circle-o");
+      const audio = document.getElementById("mymusic");
+      const stickyBtn = document.querySelector(".sticky-btn");
+
+      // Play button logic
+      playIcon.addEventListener("click", function() {
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "inline-block";
+        audio.play();
+      });
+
+      // Pause button logic
+      pauseIcon.addEventListener("click", function() {
+        pauseIcon.style.display = "none";
+        playIcon.style.display = "inline-block";
+        audio.pause();
+      });
+
+      // Scroll logic for sticky button
+      window.addEventListener("scroll", function() {
+        const scrollPos = window.scrollY;
+        if (scrollPos > 200) {
+          stickyBtn.classList.add("fixed");
+        } else {
+          stickyBtn.classList.remove("fixed");
+        }
+      });
+    });
+	
+
+    // Authentication check
+    if (sessionStorage.getItem("authenticated") !== "true") {
+      alert("You must enter the password first!");
+      window.location.href = "index.html";
+    }
+    // Clear session when leaving
+    window.addEventListener("beforeunload", () => {
+      sessionStorage.removeItem("authenticated");
+    });
+
+  </script>
+</body>
+</html>
